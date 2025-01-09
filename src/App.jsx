@@ -6,6 +6,15 @@ import ProtectedRoute from './pages/ProtectedRoute';
 import Onboarding from './pages/Onboarding';
 import Dashboard from './pages/Dashboard';
 
+import ThriveStackSDK from "@thrivestack/javascript-sdk";
+
+const sdk = ThriveStackSDK.getInstance(
+"3l4IatXc8",  // ThriveStack productId
+"1BvUPT6fn",  // ThriveStack environmentId
+"https://api.dev.app.thrivestack.ai/v1/GetTSDefaultManagementToken", // URL of the enpoint created in section: 'Implement ThriveStack Management Token Retrieval'
+true // (Optional) TEST MODE: Enable this in development environments when using the 'Test' feature to verify the integration
+);
+
 function App() {
   return (
     <>
