@@ -15,14 +15,14 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/onboarding" element={<Onboarding />}/>
         <Route path="/dashboard" element={<Dashboard />}/>
-        <Route
+        {/*<Route
           path="/"
           element={
             <ProtectedRoute>
               <h2>Home Page</h2>
             </ProtectedRoute>
           }
-        />
+        />*/}
       </Routes>
     </>
   );
